@@ -1,0 +1,195 @@
+Day1:
+=========
+NodeJS 
+ES6
+react - set up dev environment
+1. Create react project.
+2. Project folder walk through
+3. Understanding components
+4. React (helps build the code ) vs ReactDOM (helps render in browser)
+4. Understanding JSX
+5. components React
+6. Props
+7. Children Property
+8. Understanding State
+
+Day 2:
+========
+9. Events
+    List of Events in React Docs: https://reactjs.org/docs/events.html#supported-events
+    Passing Arguments to Event Handlers https://reactjs.org/docs/handling-events.html (last section)
+10. Mutating State through setState with event handler
+11. React Documentation walk through
+12. Componenents Deep dive
+    a) Functional components (Stateless)
+    b) Class Components (stateful)
+12.1. Communication from parent to child and child to parent
+    Add to Watchlist example
+13. Two Way Binding
+14. Adding Styles in css files and importing them in js files
+    hint:  import './App.css'; 
+    Inline Styles
+    hint: inside render method, before return, create 
+        var btnStyles = { 
+            backgroundColor: 'blue', 
+            color: '#ccc'
+        }
+    <button style={btnStyles} 
+15. Conditionals and Lists
+    Conditionals work with ternary expression
+    example: this.state.foodCount > 0 ? 
+                <div>found</div> 
+                : 
+                <div>not found</div>
+    Lists: looping with map
+    Key is important when rendering lists with maps
+
+16. How to update state immutably (2 ways)
+    a) get a copy of the state propert (example an array)
+        const pgms = this.state.programs.slice();    // slice() will give one copy of state property
+        //the we can update or delete the value in pgms
+        this.setState({programs: pgms}) // then at last use setState to update the original state object
+    b) use es6 
+        const pgms = [...this.state.programs];
+        //the we can update or delete the value in pgms
+        this.setState({programs: pgms}) // then at last use setState to update the original state object
+17. Debugging
+    USing Browser Console.
+    Install React Developer Tools
+18. Fragments (16.2 feature)
+19. Better Project Structure
+20. Splitting an App into multiple components - thinking in React
+21. Component Lifecycle
+    Component Creation Lifecycle in Action
+    https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d
+22. Planning the App
+23. How to Include Bootstrap in React App 
+    npm i bootstrap --save 
+    then,
+    in index.js 
+    import 'bootstrap/dist/css/bootstrap.css'
+    That's all!
+24. Material UI
+      
+
+Day 3:
+========
+1. Material UI - my-app showcase (1 Hour)
+2. Styling Componenents ( 2 Hours )
+    Using Sass ( Teach Sass )
+    https://medium.com/front-end-hacking/how-to-add-sass-or-scss-to-create-react-app-c303dae4b5bc
+    Complete the Project 
+    Deploy the App
+    ====================
+
+3. Create New App
+4. Create the Layout for Crud App
+5. Implement Router
+    https://flaviocopes.com/react-router/
+    https://blog.pusher.com/getting-started-with-react-router-v4/
+    http://manojsinghnegi.com/blog/2017/09/03/Implementing-redux-and-react-router-v4-in-your-react-app/
+6. Redux Forms 
+    https://alligator.io/redux/redux-form/
+7. Using References
+    and Ref API
+8. Redux 
+    Redux is a state management library that gives you access to the state anywhere in your components without the need to pass props.
+    'npm install --save redux react-redux'
+    'redux package'  is a separate framework, developed by open source community
+    'react-redux' is the official library that connects the two.
+
+    Refer HowReduxWorks.png
+    Data Flows unidirectionally.
+    Not Both ways data flow.
+    
+    Some Awesome Tutorials
+    https://codeburst.io/redux-a-crud-example-abb834d763c9
+    https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f
+    
+
+Some best Resources: https://www.fullstackreact.com/30-days-of-react/
+
+Day 4: 
+=========
+1. Complete the previous App
+2. Connect to API 
+    Refer: https://www.davidmeents.com/manage-state-connect-to-api-redux-axios/
+    https://www.youtube.com/watch?v=h892pHdLQtMs
+    What's Redux Thunk?
+        Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
+3. Complete the App 
+4. RxJS 
+    Intro 
+5. Redux Observable 
+    What's Observable?
+        It's a collection that returned over time. 
+        It's a push, that sends multiple values
+        Observable is like restaurant kitchen.
+        If you subscribe to observable, it decides when to give information 
+    Now, What's RxJs?
+        Various method of operators, you can chain on Observables to filter data, sort, 
+    What's Redux-Observable?
+        RxJS 6-based middleware for Redux. Compose and cancel async actions to create side effects and more.
+    What's side effects?
+        In computer science, a function or expression is said to have a side effect if it modifies some state outside its local environment.
+        "Side Effect" is not a react-specific term. It is a general concept about behaviours of functions. A function is said to have side effect if it tries to modify anything outside its body. For example, if it modifies a global variable, then it is a side effect. If it makes a network call, it is a side effect as well.
+    Refer: My Example on Observables and RxJS.
+    http://jsbin.com/kuzifehivi/4/edit?html,js,console
+
+    Steps to Configure in Redux App
+    https://redux-observable.js.org/docs/basics/SettingUpTheMiddleware.html
+    https://www.jernejsila.com/2017/01/28/redux-observable-epic-goodbye-redux-thunk-axios/
+
+
+    https://cdn-images-1.medium.com/max/720/1*Y9HjN7iA7k6QQm_l7MaP9w.png
+    https://medium.freecodecamp.org/integrating-create-react-app-redux-react-router-redux-observable-bootstrap-altogether-216db97e89a3
+    https://www.youtube.com/watch?v=f9S5uYqVGaU
+    https://www.youtube.com/watch?v=sF5-V-Szo0c
+    https://redux-observable.js.org/docs/basics/Epics.html
+
+Day 5:
+======
+Completing Redux app 
+Flow    
+    https://stephenmann.io/post/how-to-setup-flow-with-create-react-app-and-visual-studio-code/
+    https://stephenmann.io/post/building-a-full-stack-react-and-express-site-using-flow/
+    https://medium.com/javascript-inside/back-to-the-basics-1bd3b12e38dc
+    https://medium.com/javascript-inside/back-to-the-basics-using-react-flow-pt-2-99292993829f
+    https://medium.com/flow-type/even-better-support-for-react-in-flow-25b0a3485627
+    https://www.robinwieruch.de/the-soundcloud-client-in-react-redux-flow/
+Jest
+    Why Unit Testing?
+    ===============
+    What tools you need?
+        1) Test runner (executing tests and providing validation library)   
+            Example: Jest
+        2) Testing Utilities (Simulates the events, mountings, finding DOM elements) 
+            Examples: React Test Utils, Enzyme
+    npm i jest-cli
+
+    Jest, a test runner;
+    Enzyme, a testing utility for React;
+    https://jestjs.io/docs/en/tutorial-react
+    https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f
+
+    What to Test?
+    =============
+        1) Components 
+        2) If/else logic
+    What not to test?
+        1) Child Componenent's Props not required to be tested 
+        2) Node Modules not required to be tested
+
+    setup
+    ========
+        1) npm install --save enzyme react-test-renderer enzyme-adapter-react-16
+        2) Create a Functional Component Header.js
+        3) Create a Header.test.js 
+            Refer: the above file.
+
+        https://airbnb.io/enzyme/docs/api/
+        https://jestjs.io/docs/en/api
+Better Project Structure
+======================
+https://medium.com/@yiquanzhou/how-to-structure-real-world-redux-react-application-d61e66a7dd36
+https://hackernoon.com/redux-step-by-step-a-simple-and-robust-workflow-for-real-life-apps-1fdf7df46092

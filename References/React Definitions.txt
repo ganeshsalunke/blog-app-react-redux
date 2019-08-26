@@ -1,0 +1,39 @@
+Definitions
+=============
+Components
+  Stateless or Functional components 
+  Steteful or Class Components
+
+Props: 
+  Core concept of React
+  Props are read-only.
+  props  allow you to pass data from a parent (wrapping) component to a child (embedded) component.
+  changes in props (and also states) will trigger re-render of the Component
+  So, DOM will be updated
+
+Children:
+  in Parent component JSX,
+    <Program>    here goes the children  </Program>
+  in child/embedded component, Program.js you can use { props.children } to receive data
+States:
+  states are objects, that can be passed to a component/diplayed in the same component.
+  are available only in Class Components - because it requires 'Component' to be imported in the file.
+  not available in Functional Components 
+  you should not have states in many places in the app. then it will result in some unpredictable behavior in the app
+  state is a reserved word.
+  changes in states will trigger re-render of the Component
+
+Cross Component Interaction
+  The above 3 are helping us achieve cross component interaction in Angular 
+
+Events
+  React events are named using camelCase, rather than lowercase.
+  onClick={this.setReminder}
+  Supported Events 
+  https://reactjs.org/docs/events.html#supported-events
+
+Two Way Binding 
+  Refer <Food /> Component
+
+Add CSS Styles
+=============

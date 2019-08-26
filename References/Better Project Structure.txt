@@ -1,0 +1,4 @@
+Better Project Structure
+======================
+
+https://medium.com/@yiquanzhou/how-to-structure-real-world-redux-react-application-d61e66a7dd36

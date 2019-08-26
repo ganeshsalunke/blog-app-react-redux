@@ -1,0 +1,18 @@
+Flow Tutorial
+================
+1) yarn add flow-bin or npm i --save-dev flow-bin
+2) package.json 
+    script: {
+      ..,
+      ..,
+      flow: "flow"
+    }
+3) execute this command 
+   > yarn run flow init
+   this will create .flowconfig file
+4) execute
+   > yarn run flow
+5) No errors found will come.. Add 
+    //@flow 
+  as the first line one of the components
+6) 

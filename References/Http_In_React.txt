@@ -1,0 +1,10 @@
+Http in React
+===============
+1) npm i axios --save
+2) use in 
+  ComponentDidMount(){
+    axios.get(url)
+        .then(response => {
+          console.log(resonse);
+        })
+  }
